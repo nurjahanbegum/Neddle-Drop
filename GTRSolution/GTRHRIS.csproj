@@ -1,0 +1,3879 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D544FC28-FE64-4FBA-9FA8-D2EFE5CF8193}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GTRHRIS</RootNamespace>
+    <AssemblyName>GTRHRIS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.ZKFPEngXControl, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.ZKFPEngXControl.dll</HintPath>
+    </Reference>
+    <Reference Include="GTRLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Help_Desk\GTR_Software\#####Setting Validation in project####\Dll file\GTRLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Shared.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinChart.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDock.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinListBar.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinListView.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTree.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Interop.zkemkeeper, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.zkemkeeper.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ZKFPEngXControl, Version=4.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.ZKFPEngXControl.dll</HintPath>
+    </Reference>
+    <Reference Include="microsoft.office.interop.word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>G:\Arafat\Interof\New folder\microsoft.office.interop.word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.Common\12.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.WebForms\12.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SharpCompress">
+      <HintPath>L:\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\FormEntry\frmAttPross.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmAttPross.designer.cs">
+      <DependentUpon>frmAttPross.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmAttProssCasual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmAttProssCasual.designer.cs">
+      <DependentUpon>frmAttProssCasual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmAttProssDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmAttProssDriver.designer.cs">
+      <DependentUpon>frmAttProssDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmCollectData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmCollectData.designer.cs">
+      <DependentUpon>frmCollectData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmDLIClock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmDLIClock.designer.cs">
+      <DependentUpon>frmDLIClock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmDownloader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmDownloader.designer.cs">
+      <DependentUpon>frmDownloader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmEmpDataInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmEmpDataInput.designer.cs">
+      <DependentUpon>frmEmpDataInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmFingerDataTran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmFingerDataTran.designer.cs">
+      <DependentUpon>frmFingerDataTran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmIssuerFingerRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmIssuerFingerRegister.designer.cs">
+      <DependentUpon>frmIssuerFingerRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmProcessLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmProcessLock.designer.cs">
+      <DependentUpon>frmProcessLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmProssType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmProssType.designer.cs">
+      <DependentUpon>frmProssType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmPunchCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmPunchCheck.designer.cs">
+      <DependentUpon>frmPunchCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmrptMenuList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmrptMenuList.designer.cs">
+      <DependentUpon>frmrptMenuList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmTransectionLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmTransectionLog.designer.cs">
+      <DependentUpon>frmTransectionLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmUnclaimed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormEntry\frmUnclaimed.designer.cs">
+      <DependentUpon>frmUnclaimed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpDriver.designer.cs">
+      <DependentUpon>frmEmpDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpInc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpInc.designer.cs">
+      <DependentUpon>frmEmpInc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpIncMng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpIncMng.designer.cs">
+      <DependentUpon>frmEmpIncMng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmployee.designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmployeeMng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmployeeMng.designer.cs">
+      <DependentUpon>frmEmployeeMng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmFixAttB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmFixAttB.designer.cs">
+      <DependentUpon>frmFixAttB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmFixAttBuyer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmFixAttBuyer.designer.cs">
+      <DependentUpon>frmFixAttBuyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmFixAtt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmFixAtt.designer.cs">
+      <DependentUpon>frmFixAtt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmFixAttDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmFixAttDriver.designer.cs">
+      <DependentUpon>frmFixAttDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpCardAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpCardAssign.designer.cs">
+      <DependentUpon>frmEmpCardAssign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpIncYearly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpIncYearly.designer.cs">
+      <DependentUpon>frmEmpIncYearly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmAttenMonthly.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmAttenMonthly.designer.cs">
+      <DependentUpon>frmAttenMonthly.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmEmpDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmEmpDetails.designer.cs">
+      <DependentUpon>frmEmpDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmIdCardPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmIdCardPrint.designer.cs">
+      <DependentUpon>frmIdCardPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmLateMonthly.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmLateMonthly.designer.cs">
+      <DependentUpon>frmLateMonthly.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptJobCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptJobCard.designer.cs">
+      <DependentUpon>frmrptJobCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptJobCardB3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptJobCardB3.designer.cs">
+      <DependentUpon>frmrptJobCardB3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptJobCardB2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptJobCardB2.designer.cs">
+      <DependentUpon>frmrptJobCardB2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptJobCardB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptJobCardB.designer.cs">
+      <DependentUpon>frmrptJobCardB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Classes\clsMain.cs" />
+    <Compile Include="Common\FormEntry\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FormEntry\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FormEntry\frmrptViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FormEntry\frmrptViewer.designer.cs">
+      <DependentUpon>frmrptViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DsAppointment1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsAppointment1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsAttendSum.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAttendSum.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsAttendSumSec.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAttendSumSec.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBank.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBank.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBonusSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBonusSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDeductListMng.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDeductListMng.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEarnLeave.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEarnLeave.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEmpDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmpDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEmpLetter.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmpLetter.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEmployeeList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeeList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsFestSum.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFestSum.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsJobCardDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsJobCardDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsLoanDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLoanDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsML.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsML.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsOTOfficer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOTOfficer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPaySlip.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPaySlip.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPFSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPFSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPFSum.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPFSum.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSalaryAll.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalaryAll.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSalaryDeno.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalaryDeno.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSalaryDriver.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalaryDriver.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSalaryMng.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalaryMng.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSalarySheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalarySheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSalarySheetActual.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalarySheetActual.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSalarySum.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalarySum.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSumTest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSumTest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsTranLog.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTranLog.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmDesignation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmDesignation.designer.cs">
+      <DependentUpon>frmDesignation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmPost.designer.cs">
+      <DependentUpon>frmPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmExchangeRatePF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmExchangeRatePF.Designer.cs">
+      <DependentUpon>frmExchangeRatePF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\FormEntry\frmCadreAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\FormEntry\frmCadreAttendance.designer.cs">
+      <DependentUpon>frmCadreAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\FormEntry\frmCadreUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\FormEntry\frmCadreUnit.designer.cs">
+      <DependentUpon>frmCadreUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmFixAttAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmFixAttAuto.designer.cs">
+      <DependentUpon>frmFixAttAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmployeeType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmployeeType.designer.cs">
+      <DependentUpon>frmEmployeeType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpTransfer.designer.cs">
+      <DependentUpon>frmEmpTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmFixAttCasual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmFixAttCasual.designer.cs">
+      <DependentUpon>frmFixAttCasual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpCasual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmpCasual.designer.cs">
+      <DependentUpon>frmEmpCasual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\FormEntry\frmCadre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\FormEntry\frmCadre.designer.cs">
+      <DependentUpon>frmCadre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmLeave.Designer.cs">
+      <DependentUpon>frmLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmOTApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmOTApproval.designer.cs">
+      <DependentUpon>frmOTApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmOTPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmOTPermission.designer.cs">
+      <DependentUpon>frmOTPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmployeeShort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmployeeShort.designer.cs">
+      <DependentUpon>frmEmployeeShort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmIncAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmIncAll.designer.cs">
+      <DependentUpon>frmIncAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmAttenDailyDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmAttenDailyDetails.designer.cs">
+      <DependentUpon>frmAttenDailyDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmAttenMonthlyB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmAttenMonthlyB.designer.cs">
+      <DependentUpon>frmAttenMonthlyB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptDailyAttB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptDailyAttB.designer.cs">
+      <DependentUpon>frmrptDailyAttB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptGradeIns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptGradeIns.designer.cs">
+      <DependentUpon>frmrptGradeIns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptOutTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptOutTime.designer.cs">
+      <DependentUpon>frmrptOutTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmTransfer.designer.cs">
+      <DependentUpon>frmTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmOTRange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmOTRange.designer.cs">
+      <DependentUpon>frmOTRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptShiftList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptShiftList.designer.cs">
+      <DependentUpon>frmrptShiftList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptEmpSalaryCasual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptEmpSalaryCasual.designer.cs">
+      <DependentUpon>frmrptEmpSalaryCasual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptEmpCasual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptEmpCasual.designer.cs">
+      <DependentUpon>frmrptEmpCasual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptDailyAttCasual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptDailyAttCasual.designer.cs">
+      <DependentUpon>frmrptDailyAttCasual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptOTApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptOTApproval.designer.cs">
+      <DependentUpon>frmrptOTApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptOTPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptOTPermission.designer.cs">
+      <DependentUpon>frmrptOTPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptLeaveAbsent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptLeaveAbsent.designer.cs">
+      <DependentUpon>frmrptLeaveAbsent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmAbsentMonthly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmAbsentMonthly.designer.cs">
+      <DependentUpon>frmAbsentMonthly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campus\FormEntry\frmExamMarkEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campus\FormEntry\frmExamMarkEntry.designer.cs">
+      <DependentUpon>frmExamMarkEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campus\FormEntry\frmStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campus\FormEntry\frmStudent.designer.cs">
+      <DependentUpon>frmStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmApplicantList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmApplicantList.Designer.cs">
+      <DependentUpon>frmApplicantList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmApplicants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmApplicants.designer.cs">
+      <DependentUpon>frmApplicants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmSmsGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmSmsGrid.designer.cs">
+      <DependentUpon>frmSmsGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmImport.designer.cs">
+      <DependentUpon>frmImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmMobileDeduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmMobileDeduct.designer.cs">
+      <DependentUpon>frmMobileDeduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmployeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmEmployeeList.Designer.cs">
+      <DependentUpon>frmEmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmLeaveBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmLeaveBalance.designer.cs">
+      <DependentUpon>frmLeaveBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmReleased.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormEntry\frmReleased.designer.cs">
+      <DependentUpon>frmReleased.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmMaxStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmMaxStatus.designer.cs">
+      <DependentUpon>frmMaxStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptJobCardSpecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptJobCardSpecial.Designer.cs">
+      <DependentUpon>frmrptJobCardSpecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptFestBonusNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptFestBonusNo.designer.cs">
+      <DependentUpon>frmrptFestBonusNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptDailyAtt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptDailyAtt.designer.cs">
+      <DependentUpon>frmrptDailyAtt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptLeave.designer.cs">
+      <DependentUpon>frmrptLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptEmployee.designer.cs">
+      <DependentUpon>frmrptEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptIncrement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence\FormReport\frmrptIncrement.designer.cs">
+      <DependentUpon>frmrptIncrement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campus\FormEntry\frmAdmisnFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campus\FormEntry\frmAdmisnFrm.designer.cs">
+      <DependentUpon>frmAdmisnFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campus\FormEntry\frmAdmisnResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campus\FormEntry\frmAdmisnResult.designer.cs">
+      <DependentUpon>frmAdmisnResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campus\FormReport\frmRptExamMarkEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campus\FormReport\frmRptExamMarkEdit.designer.cs">
+      <DependentUpon>frmRptExamMarkEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campus\FormReport\frmRptAdmResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campus\FormReport\frmRptAdmResult.designer.cs">
+      <DependentUpon>frmRptAdmResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campus\FormReport\frmRptFormSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campus\FormReport\frmRptFormSale.designer.cs">
+      <DependentUpon>frmRptFormSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campus\frmAdmisnFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campus\frmAdmisnFrm.designer.cs">
+      <DependentUpon>frmAdmisnFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campus\frmSubTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campus\frmSubTemp.designer.cs">
+      <DependentUpon>frmSubTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Campus\frmSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Campus\frmSubjects.designer.cs">
+      <DependentUpon>frmSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Classes\SMS.cs" />
+    <Compile Include="Common\FormClass\clsLogin.cs" />
+    <Compile Include="Common\FormClass\clsMaster.cs" />
+    <Compile Include="Common\FormEntry\frmMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FormEntry\frmMaster.designer.cs">
+      <DependentUpon>frmMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dsAdmResultSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAdmResultSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsAllowance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAllowance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsAllowanceSum.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAllowanceSum.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsAllowDeno.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAllowDeno.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsAttendFixed.cs">
+      <DependentUpon>dsAttendFixed.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsAttendFixed.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAttendFixed.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsAttendFixedF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAttendFixedF.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsAttendMonthly.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAttendMonthly.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBonusSum.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBonusSum.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBonusSumDenomination.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBonusSumDenomination.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDailyMovement.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDailyMovement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEmployeeJoin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeeJoin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEmployeeReleased.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeeReleased.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsFormSales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFormSales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsGrade.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGrade.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsIncenPayment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsIncenPayment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsIncentive.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsIncentive.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsIncrement.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsIncrement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsIncrTemp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsIncrTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsInsurance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInsurance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsJobCard.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsJobCard.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsJobCardMonthly.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsJobCardMonthly.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsLateMonthly.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLateMonthly.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsLeaveAbsent.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLeaveAbsent.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsLeaveBalance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLeaveBalance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsLeaveBalanceDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLeaveBalanceDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsLeaveList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLeaveList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsLoanSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLoanSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsLoanTemp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLoanTemp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsMaxStatus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMaxStatus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsNightAllow.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsNightAllow.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsOTApproval.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOTApproval.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsOTPermission.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOTPermission.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsOTRange.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOTRange.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsOvertimeHighest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOvertimeHighest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsOvertimeSum.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOvertimeSum.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsRptAdvanceSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptAdvanceSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsrptAttend.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsrptAttend.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsRptBankSheet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptBankSheet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsRptCashSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptCashSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsrptFestivalSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsrptFestivalSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsRptMobileBill.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptMobileBill.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsRptSuspenseSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptSuspenseSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsRptTaxSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptTaxSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSalaryAddDed.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalaryAddDed.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSalaryBank.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalaryBank.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSalaryCasual.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalaryCasual.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSalaryCasualSum.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalaryCasualSum.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsTiffin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTiffin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsTraining.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTraining.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="dsTransfer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTransfer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsUnclaimed.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUnclaimed.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dtAttendSumTiffin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtAttendSumTiffin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dtIncrEntitle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtIncrEntitle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GTRHRISDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GTRHRISDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmBusiness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmBusiness.designer.cs">
+      <DependentUpon>frmBusiness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmCorporate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmCorporate.designer.cs">
+      <DependentUpon>frmCorporate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmCasualCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmCasualCompany.designer.cs">
+      <DependentUpon>frmCasualCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmCadreInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmCadreInput.Designer.cs">
+      <DependentUpon>frmCadreInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmOperation.designer.cs">
+      <DependentUpon>frmOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmGradeSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmGradeSalary.designer.cs">
+      <DependentUpon>frmGradeSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmShiftRotation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmShiftRotation.designer.cs">
+      <DependentUpon>frmShiftRotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmDesigCapacity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmDesigCapacity.designer.cs">
+      <DependentUpon>frmDesigCapacity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmSubSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmSubSection.designer.cs">
+      <DependentUpon>frmSubSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmDepartment.designer.cs">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmGradeInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmGradeInsurance.designer.cs">
+      <DependentUpon>frmGradeInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmBandSubIncen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmBandSubIncen.designer.cs">
+      <DependentUpon>frmBandSubIncen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmBandIncen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmBandIncen.designer.cs">
+      <DependentUpon>frmBandIncen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmCategory.designer.cs">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmBand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmBand.designer.cs">
+      <DependentUpon>frmBand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmBloodGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmBloodGroup.Designer.cs">
+      <DependentUpon>frmBloodGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmBusStop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmBusStop.designer.cs">
+      <DependentUpon>frmBusStop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmDistrict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmDistrict.designer.cs">
+      <DependentUpon>frmDistrict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmExchangeRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmExchangeRate.Designer.cs">
+      <DependentUpon>frmExchangeRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmFloor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmFloor.Designer.cs">
+      <DependentUpon>frmFloor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmGrade.Designer.cs">
+      <DependentUpon>frmGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmDepartmentt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmDepartmentt.designer.cs">
+      <DependentUpon>frmDepartmentt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmLine.Designer.cs">
+      <DependentUpon>frmLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmMonth.Designer.cs">
+      <DependentUpon>frmMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmMyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmMyInfo.Designer.cs">
+      <DependentUpon>frmMyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmReligion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmReligion.Designer.cs">
+      <DependentUpon>frmReligion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmSection.designer.cs">
+      <DependentUpon>frmSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmShift.designer.cs">
+      <DependentUpon>frmShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmShiftInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmShiftInput.designer.cs">
+      <DependentUpon>frmShiftInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmVariable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HK\FormEntry\frmVariable.designer.cs">
+      <DependentUpon>frmVariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\FormEntry\frmHayInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\FormEntry\frmHayInfo.designer.cs">
+      <DependentUpon>frmHayInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\FormEntry\frmEmpPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\FormEntry\frmEmpPermission.designer.cs">
+      <DependentUpon>frmEmpPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Letter\FormReport\frmrptAbsentLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Letter\FormReport\frmrptAbsentLetter.designer.cs">
+      <DependentUpon>frmrptAbsentLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Letter\FormReport\frmrptLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Letter\FormReport\frmrptLetter.designer.cs">
+      <DependentUpon>frmrptLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Letter\FormReport\frmrptSuspendLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Letter\FormReport\frmrptSuspendLetter.designer.cs">
+      <DependentUpon>frmrptSuspendLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Letter\FormReport\frmrptNoticeLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Letter\FormReport\frmrptNoticeLetter.designer.cs">
+      <DependentUpon>frmrptNoticeLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Letter\FormReport\frmrptWarningLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Letter\FormReport\frmrptWarningLetter.designer.cs">
+      <DependentUpon>frmrptWarningLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\FormEntry\frmInputPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\FormEntry\frmInputPermission.designer.cs">
+      <DependentUpon>frmInputPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmUserPermissionTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmUserPermissionTransfer.designer.cs">
+      <DependentUpon>frmUserPermissionTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCompany.designer.cs">
+      <DependentUpon>frmCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCreateUser.designer.cs">
+      <DependentUpon>frmCreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCreateUserGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCreateUserGroup.designer.cs">
+      <DependentUpon>frmCreateUserGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmDBBk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmDBBk.designer.cs">
+      <DependentUpon>frmDBBk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmUserSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmUserSalary.designer.cs">
+      <DependentUpon>frmUserSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmModule.designer.cs">
+      <DependentUpon>frmModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmModuleGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmModuleGroup.designer.cs">
+      <DependentUpon>frmModuleGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmModuleMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmModuleMenu.designer.cs">
+      <DependentUpon>frmModuleMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmPassChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmPassChange.designer.cs">
+      <DependentUpon>frmPassChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmUserCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmUserCompany.designer.cs">
+      <DependentUpon>frmUserCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmUserMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmUserMenu.designer.cs">
+      <DependentUpon>frmUserMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmUserModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmUserModule.designer.cs">
+      <DependentUpon>frmUserModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmWebCreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmWebCreateUser.designer.cs">
+      <DependentUpon>frmWebCreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmWebMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmWebMenu.designer.cs">
+      <DependentUpon>frmWebMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmWebUserMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmWebUserMenu.designer.cs">
+      <DependentUpon>frmWebUserMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NeddleDropDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NeddleDropDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\FormEntry\frmAutoUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operation\FormEntry\frmAutoUpdate.designer.cs">
+      <DependentUpon>frmAutoUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmOfficerOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmOfficerOT.designer.cs">
+      <DependentUpon>frmOfficerOT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmPFEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmPFEdit.designer.cs">
+      <DependentUpon>frmPFEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmShortLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmShortLeave.designer.cs">
+      <DependentUpon>frmShortLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmTiffin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmTiffin.designer.cs">
+      <DependentUpon>frmTiffin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmEmpPF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmEmpPF.designer.cs">
+      <DependentUpon>frmEmpPF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmPFPross.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmPFPross.designer.cs">
+      <DependentUpon>frmPFPross.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmFixAttIndividual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmFixAttIndividual.Designer.cs">
+      <DependentUpon>frmFixAttIndividual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmFixAttMonthly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmFixAttMonthly.designer.cs">
+      <DependentUpon>frmFixAttMonthly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmFestAdvSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmFestAdvSalary.designer.cs">
+      <DependentUpon>frmFestAdvSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmSalTrn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmSalTrn.designer.cs">
+      <DependentUpon>frmSalTrn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmNightOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmNightOT.designer.cs">
+      <DependentUpon>frmNightOT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmOthersManualEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmOthersManualEntry.designer.cs">
+      <DependentUpon>frmOthersManualEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmSalAdvAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmSalAdvAll.designer.cs">
+      <DependentUpon>frmSalAdvAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmMLPross.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmMLPross.Designer.cs">
+      <DependentUpon>frmMLPross.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmSalAddition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmSalAddition.designer.cs">
+      <DependentUpon>frmSalAddition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmLoan.Designer.cs">
+      <DependentUpon>frmLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmSalAdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmSalAdv.designer.cs">
+      <DependentUpon>frmSalAdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmSalDue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmSalDue.designer.cs">
+      <DependentUpon>frmSalDue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmSalPross.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmSalPross.designer.cs">
+      <DependentUpon>frmSalPross.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormEntry\frmTransport.designer.cs">
+      <DependentUpon>frmTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptEarnLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptEarnLeave.designer.cs">
+      <DependentUpon>frmrptEarnLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptExtraOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptExtraOT.designer.cs">
+      <DependentUpon>frmrptExtraOT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalaryDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalaryDriver.designer.cs">
+      <DependentUpon>frmrptSalaryDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptPFSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptPFSheet.designer.cs">
+      <DependentUpon>frmrptPFSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheet.designer.cs">
+      <DependentUpon>frmrptSalarySheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheetB3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheetB3.designer.cs">
+      <DependentUpon>frmrptSalarySheetB3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheetB2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheetB2.designer.cs">
+      <DependentUpon>frmrptSalarySheetB2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheetB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheetB.designer.cs">
+      <DependentUpon>frmrptSalarySheetB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptTrainingEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptTrainingEmp.designer.cs">
+      <DependentUpon>frmrptTrainingEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptFestBonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptFestBonus.designer.cs">
+      <DependentUpon>frmrptFestBonus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheetMngHigher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheetMngHigher.designer.cs">
+      <DependentUpon>frmrptSalarySheetMngHigher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheetMng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheetMng.designer.cs">
+      <DependentUpon>frmrptSalarySheetMng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptLoan.designer.cs">
+      <DependentUpon>frmrptLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptNightAllow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptNightAllow.designer.cs">
+      <DependentUpon>frmrptNightAllow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptManualDeno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptManualDeno.designer.cs">
+      <DependentUpon>frmrptManualDeno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptIncentive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptIncentive.designer.cs">
+      <DependentUpon>frmrptIncentive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptGrade.designer.cs">
+      <DependentUpon>frmrptGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalaryDeno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalaryDeno.designer.cs">
+      <DependentUpon>frmrptSalaryDeno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptAllowance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptAllowance.designer.cs">
+      <DependentUpon>frmrptAllowance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmCasualAttBonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmCasualAttBonus.designer.cs">
+      <DependentUpon>frmCasualAttBonus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheetCasual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payroll\FormReport\frmrptSalarySheetCasual.designer.cs">
+      <DependentUpon>frmrptSalarySheetCasual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rptidcard.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptidcard.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TManagement\frmTalManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TManagement\frmTalManagement.Designer.cs">
+      <DependentUpon>frmTalManagement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\FormEntry\frmAttPross.resx">
+      <DependentUpon>frmAttPross.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmAttProssCasual.resx">
+      <DependentUpon>frmAttProssCasual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmAttProssDriver.resx">
+      <DependentUpon>frmAttProssDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmCollectData.resx">
+      <DependentUpon>frmCollectData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmDLIClock.resx">
+      <DependentUpon>frmDLIClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmDownloader.resx">
+      <DependentUpon>frmDownloader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmEmpDataInput.resx">
+      <DependentUpon>frmEmpDataInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmFingerDataTran.resx">
+      <DependentUpon>frmFingerDataTran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmIssuerFingerRegister.resx">
+      <DependentUpon>frmIssuerFingerRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmProcessLock.resx">
+      <DependentUpon>frmProcessLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmProssType.resx">
+      <DependentUpon>frmProssType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmPunchCheck.resx">
+      <DependentUpon>frmPunchCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmrptMenuList.resx">
+      <DependentUpon>frmrptMenuList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmTransectionLog.resx">
+      <DependentUpon>frmTransectionLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormEntry\frmUnclaimed.resx">
+      <DependentUpon>frmUnclaimed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmEmpDriver.resx">
+      <DependentUpon>frmEmpDriver.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmEmpInc.resx">
+      <DependentUpon>frmEmpInc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmEmpIncMng.resx">
+      <DependentUpon>frmEmpIncMng.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmEmployeeMng.resx">
+      <DependentUpon>frmEmployeeMng.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmFixAttB.resx">
+      <DependentUpon>frmFixAttB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmFixAttBuyer.resx">
+      <DependentUpon>frmFixAttBuyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmFixAtt.resx">
+      <DependentUpon>frmFixAtt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmFixAttDriver.resx">
+      <DependentUpon>frmFixAttDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmEmpCardAssign.resx">
+      <DependentUpon>frmEmpCardAssign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmEmpIncYearly.resx">
+      <DependentUpon>frmEmpIncYearly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmAttenMonthly.resx">
+      <DependentUpon>frmAttenMonthly.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmEmpDetails.resx">
+      <DependentUpon>frmEmpDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmIdCardPrint.resx">
+      <DependentUpon>frmIdCardPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmLateMonthly.resx">
+      <DependentUpon>frmLateMonthly.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptJobCard.resx">
+      <DependentUpon>frmrptJobCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptJobCardB3.resx">
+      <DependentUpon>frmrptJobCardB3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptJobCardB2.resx">
+      <DependentUpon>frmrptJobCardB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptJobCardB.resx">
+      <DependentUpon>frmrptJobCardB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TManagement\frmTalManagement.resx">
+      <DependentUpon>frmTalManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Attendence\Reports\rptAbsentMonthly.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendHolidayAllw.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendNightAllw.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendOverNightAllw.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendSumSec.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendSum.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptCadreStruckAnalysis.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptCadrePositionList.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptCadreSumAttend.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptCadreSumAbsent.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptCadreSumStatusStruck.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptCadreSumStatusAttend.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptCadreABAnalysis.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptEmpDetails.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptEmpMobileList.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptEmpListCard.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptEmpListDesig.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptIDCardPrint_interstoff.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptIncrList.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptJobCard.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptJobCardB.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptJobCardDetails.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptMonthlyOT.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptTranLog.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptMenuList.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptIDCardPrint.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptEmpFingerList.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendAbsentPresent.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Common\FormEntry\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FormEntry\frmrptViewer.resx">
+      <DependentUpon>frmrptViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmDesignation.resx">
+      <DependentUpon>frmDesignation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmPost.resx">
+      <DependentUpon>frmPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmExchangeRatePF.resx">
+      <DependentUpon>frmExchangeRatePF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\FormEntry\frmCadreAttendance.resx">
+      <DependentUpon>frmCadreAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\FormEntry\frmCadreUnit.resx">
+      <DependentUpon>frmCadreUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmFixAttAuto.resx">
+      <DependentUpon>frmFixAttAuto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmEmployeeType.resx">
+      <DependentUpon>frmEmployeeType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmEmpTransfer.resx">
+      <DependentUpon>frmEmpTransfer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmFixAttCasual.resx">
+      <DependentUpon>frmFixAttCasual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmEmpCasual.resx">
+      <DependentUpon>frmEmpCasual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\FormEntry\frmCadre.resx">
+      <DependentUpon>frmCadre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmLeave.resx">
+      <DependentUpon>frmLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmOTApproval.resx">
+      <DependentUpon>frmOTApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmOTPermission.resx">
+      <DependentUpon>frmOTPermission.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmEmployeeShort.resx">
+      <DependentUpon>frmEmployeeShort.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmIncAll.resx">
+      <DependentUpon>frmIncAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmAttenDailyDetails.resx">
+      <DependentUpon>frmAttenDailyDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmAttenMonthlyB.resx">
+      <DependentUpon>frmAttenMonthlyB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptDailyAttB.resx">
+      <DependentUpon>frmrptDailyAttB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptGradeIns.resx">
+      <DependentUpon>frmrptGradeIns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptOutTime.resx">
+      <DependentUpon>frmrptOutTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmTransfer.resx">
+      <DependentUpon>frmTransfer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmOTRange.resx">
+      <DependentUpon>frmOTRange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptShiftList.resx">
+      <DependentUpon>frmrptShiftList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptEmpSalaryCasual.resx">
+      <DependentUpon>frmrptEmpSalaryCasual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptEmpCasual.resx">
+      <DependentUpon>frmrptEmpCasual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptDailyAttCasual.resx">
+      <DependentUpon>frmrptDailyAttCasual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptOTApproval.resx">
+      <DependentUpon>frmrptOTApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptOTPermission.resx">
+      <DependentUpon>frmrptOTPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptLeaveAbsent.resx">
+      <DependentUpon>frmrptLeaveAbsent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmAbsentMonthly.resx">
+      <DependentUpon>frmAbsentMonthly.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Attendence\Reports\rptCadreSumStatusUnit.rdlc" />
+    <None Include="Attendence\Reports\rptCadreSumUnit.rdlc" />
+    <None Include="Attendence\Reports\rptCadreSumAnalysis.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptCadreSumStatus.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptEmpListPF.rdlc" />
+    <None Include="Attendence\Reports\rptIDCardPrintThree.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendPresentB.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptLeaveMonthDetails.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendAll.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptIncrTemp.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptInsurance.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptIncrEntitle.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptCadreSum.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptTransfer.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptOTRange.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptShiftList.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptJobCardCasual.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendAbsentCasual.rdlc" />
+    <None Include="Attendence\Reports\rptAttendInOutCasual.rdlc" />
+    <None Include="Attendence\Reports\rptAttendLateCasual.rdlc" />
+    <None Include="Attendence\Reports\rptAttendMissingCasual.rdlc" />
+    <None Include="Attendence\Reports\rptAttendOvertimeCasual.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendPresentCasual.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptOTApproval.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptOTPermission.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptLeaveAbsent.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendAbsentCont.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendPresent.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Campus\FormEntry\frmExamMarkEntry.resx">
+      <DependentUpon>frmExamMarkEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campus\FormEntry\frmStudent.resx">
+      <DependentUpon>frmStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmApplicantList.resx">
+      <DependentUpon>frmApplicantList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmApplicants.resx">
+      <DependentUpon>frmApplicants.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmSmsGrid.resx">
+      <DependentUpon>frmSmsGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmImport.resx">
+      <DependentUpon>frmImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmMobileDeduct.resx">
+      <DependentUpon>frmMobileDeduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmEmployeeList.resx">
+      <DependentUpon>frmEmployeeList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmLeaveBalance.resx">
+      <DependentUpon>frmLeaveBalance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormEntry\frmReleased.resx">
+      <DependentUpon>frmReleased.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmMaxStatus.resx">
+      <DependentUpon>frmMaxStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptJobCardSpecial.resx">
+      <DependentUpon>frmrptJobCardSpecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptFestBonusNo.resx">
+      <DependentUpon>frmrptFestBonusNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptDailyAtt.resx">
+      <DependentUpon>frmrptDailyAtt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptLeave.resx">
+      <DependentUpon>frmrptLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptEmployee.resx">
+      <DependentUpon>frmrptEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence\FormReport\frmrptIncrement.resx">
+      <DependentUpon>frmrptIncrement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Attendence\Reports\rptAppointENG.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Campus\FormEntry\frmAdmisnFrm.resx">
+      <DependentUpon>frmAdmisnFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campus\FormEntry\frmAdmisnResult.resx">
+      <DependentUpon>frmAdmisnResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campus\FormReport\frmRptExamMarkEdit.resx">
+      <DependentUpon>frmRptExamMarkEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campus\FormReport\frmRptAdmResult.resx">
+      <DependentUpon>frmRptAdmResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campus\FormReport\frmRptFormSale.resx">
+      <DependentUpon>frmRptFormSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campus\frmAdmisnFrm.resx">
+      <DependentUpon>frmAdmisnFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campus\frmSubTemp.resx">
+      <DependentUpon>frmSubTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campus\frmSubjects.resx">
+      <DependentUpon>frmSubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campus\Reports\rptAdmResultSheet.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Campus\Reports\rptFormSale.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmBusiness.resx">
+      <DependentUpon>frmBusiness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmCorporate.resx">
+      <DependentUpon>frmCorporate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmCasualCompany.resx">
+      <DependentUpon>frmCasualCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmCadreInput.resx">
+      <DependentUpon>frmCadreInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmOperation.resx">
+      <DependentUpon>frmOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmGradeSalary.resx">
+      <DependentUpon>frmGradeSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmShiftRotation.resx">
+      <DependentUpon>frmShiftRotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmDesigCapacity.resx">
+      <DependentUpon>frmDesigCapacity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmSubSection.resx">
+      <DependentUpon>frmSubSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmDepartment.resx">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmGradeInsurance.resx">
+      <DependentUpon>frmGradeInsurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmBandSubIncen.resx">
+      <DependentUpon>frmBandSubIncen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmBandIncen.resx">
+      <DependentUpon>frmBandIncen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmCategory.resx">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmBand.resx">
+      <DependentUpon>frmBand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmSection.resx">
+      <DependentUpon>frmSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmShift.resx">
+      <DependentUpon>frmShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmShiftInput.resx">
+      <DependentUpon>frmShiftInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmVariable.resx">
+      <DependentUpon>frmVariable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\FormEntry\frmHayInfo.resx">
+      <DependentUpon>frmHayInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\FormEntry\frmEmpPermission.resx">
+      <DependentUpon>frmEmpPermission.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letter\FormReport\frmrptAbsentLetter.resx">
+      <DependentUpon>frmrptAbsentLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letter\FormReport\frmrptLetter.resx">
+      <DependentUpon>frmrptLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letter\FormReport\frmrptSuspendLetter.resx">
+      <DependentUpon>frmrptSuspendLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letter\FormReport\frmrptNoticeLetter.resx">
+      <DependentUpon>frmrptNoticeLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letter\FormReport\frmrptWarningLetter.resx">
+      <DependentUpon>frmrptWarningLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\FormEntry\frmInputPermission.resx">
+      <DependentUpon>frmInputPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DsAppointment1.xsc">
+      <DependentUpon>DsAppointment1.xsd</DependentUpon>
+    </None>
+    <None Include="DsAppointment1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsAppointment1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsAppointment1.xss">
+      <DependentUpon>DsAppointment1.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalarySheetActual.xsc">
+      <DependentUpon>dsSalarySheetActual.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalarySheetActual.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalarySheetActual.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSalarySheetActual.xss">
+      <DependentUpon>dsSalarySheetActual.xsd</DependentUpon>
+    </None>
+    <None Include="Letter\Reports\rptAbsent1.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAbsent2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAbsent3.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAbsentHabitual.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAbsentUnapproval.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAbsentUnapproval2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAdjustment.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAge&amp;MedicalCertificate.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAgeVerification.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAggrementLetter.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAppointment.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAppointmentDayShift.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAppointmentNightShift.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAppointmentStaff.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptAppointmentWorker.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptConfirmation.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptDailyAttReg.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptDoctorCheckUp.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptEmpIncHistory.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptEmpIncStatus.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptEmployeeRegister.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptJobApplication.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptLeaveRegister.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptNoticeDamage.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptNoticeInquiry.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptNoticeShowcause.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptPerformanceLetter.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptPromotionStaff.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptPromotionWorker.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptPromotionWorker1.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptRegisterBook.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptSalaryCertificate.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptServiceBook.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptServiceBook2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptServiceBook3.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptServiceBook4.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptServiceRecivedRecord.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptSuspendDismiss.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptSuspendTemporary.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptSuspendTermination.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptTransferForm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptTransferLetter.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptWarning.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptWarningBehavior.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptWarningLate.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptWarningNegligence.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptWorkerEfficinencyEvaluation.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptWorkerRegister.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptFinelSettlement.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptIncrement.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptIncPromotion.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptYearlyIncPromotion.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptYearlyIncrement.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Letter\Reports\rptLeaveApplication.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Letter\Reports\rptApplicationforJoining.rdlc" />
+    <EmbeddedResource Include="Master\frmUserPermissionTransfer.resx">
+      <DependentUpon>frmUserPermissionTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmCompany.resx">
+      <DependentUpon>frmCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmUserSalary.resx">
+      <DependentUpon>frmUserSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmWebCreateUser.resx">
+      <DependentUpon>frmWebCreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmWebMenu.resx">
+      <DependentUpon>frmWebMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmWebUserMenu.resx">
+      <DependentUpon>frmWebUserMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operation\FormEntry\frmAutoUpdate.resx">
+      <DependentUpon>frmAutoUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmOfficerOT.resx">
+      <DependentUpon>frmOfficerOT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmPFEdit.resx">
+      <DependentUpon>frmPFEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmShortLeave.resx">
+      <DependentUpon>frmShortLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmTiffin.resx">
+      <DependentUpon>frmTiffin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmEmpPF.resx">
+      <DependentUpon>frmEmpPF.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmPFPross.resx">
+      <DependentUpon>frmPFPross.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmFixAttIndividual.resx">
+      <DependentUpon>frmFixAttIndividual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmFixAttMonthly.resx">
+      <DependentUpon>frmFixAttMonthly.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmFestAdvSalary.resx">
+      <DependentUpon>frmFestAdvSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmSalTrn.resx">
+      <DependentUpon>frmSalTrn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmNightOT.resx">
+      <DependentUpon>frmNightOT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmOthersManualEntry.resx">
+      <DependentUpon>frmOthersManualEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmSalAdvAll.resx">
+      <DependentUpon>frmSalAdvAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmMLPross.resx">
+      <DependentUpon>frmMLPross.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmSalAddition.resx">
+      <DependentUpon>frmSalAddition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmSalAdv.resx">
+      <DependentUpon>frmSalAdv.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmSalDue.resx">
+      <DependentUpon>frmSalDue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmSalPross.resx">
+      <DependentUpon>frmSalPross.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmTransport.resx">
+      <DependentUpon>frmTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptEarnLeave.resx">
+      <DependentUpon>frmrptEarnLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptExtraOT.resx">
+      <DependentUpon>frmrptExtraOT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptSalaryDriver.resx">
+      <DependentUpon>frmrptSalaryDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptPFSheet.resx">
+      <DependentUpon>frmrptPFSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptSalarySheet.resx">
+      <DependentUpon>frmrptSalarySheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptSalarySheetB3.resx">
+      <DependentUpon>frmrptSalarySheetB3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptSalarySheetB2.resx">
+      <DependentUpon>frmrptSalarySheetB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptSalarySheetB.resx">
+      <DependentUpon>frmrptSalarySheetB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptTrainingEmp.resx">
+      <DependentUpon>frmrptTrainingEmp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptFestBonus.resx">
+      <DependentUpon>frmrptFestBonus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptSalarySheetMngHigher.resx">
+      <DependentUpon>frmrptSalarySheetMngHigher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptSalarySheetMng.resx">
+      <DependentUpon>frmrptSalarySheetMng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptLoan.resx">
+      <DependentUpon>frmrptLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptNightAllow.resx">
+      <DependentUpon>frmrptNightAllow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptManualDeno.resx">
+      <DependentUpon>frmrptManualDeno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptIncentive.resx">
+      <DependentUpon>frmrptIncentive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptGrade.resx">
+      <DependentUpon>frmrptGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptSalaryDeno.resx">
+      <DependentUpon>frmrptSalaryDeno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptAllowance.resx">
+      <DependentUpon>frmrptAllowance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmCasualAttBonus.resx">
+      <DependentUpon>frmCasualAttBonus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormReport\frmrptSalarySheetCasual.resx">
+      <DependentUpon>frmrptSalarySheetCasual.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="NeddleDropDataSet.xsc">
+      <DependentUpon>NeddleDropDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NeddleDropDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NeddleDropDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NeddleDropDataSet.xss">
+      <DependentUpon>NeddleDropDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Payroll\Reports\rptAdditionSheetMng.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptDataCheckList.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptEarnleaveRel.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptFestAdvanceSheet.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptFestSumAdv.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptFestSum.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptFestivalBonusSheet.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptLoanDetails.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptMLLetter.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptEOTSheet.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPaySlip.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPaySlipEarnLeave.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPaySlipFestival.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPaySlipYEL.rdlc" />
+    <None Include="Payroll\Reports\rptPFSumShort.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPFSum.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPFSheetReleased.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPFSheetFirst.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPFSheet.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptOTOfficer.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalaryAdvance.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalaryPF.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalaryDed.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySettlement.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPFSheetExcel.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySheet.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySheetReleasedB.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySheetReleased.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySheetExcel.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySheetSingle.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptEarnleave.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptEOTSum.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySum.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySumMng.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptEarnLeaveSum.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptUnclaimed.rdlc" />
+    <None Include="Payroll\Reports\rptUnclaimedEmp.rdlc" />
+    <None Include="Payroll\Reports\rptTiffin.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPFLedger.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPFSheetPaySlip.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySheetMng.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptLoanSheet.rdlc" />
+    <None Include="Payroll\Reports\rptNightAllow.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptNight.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptNightSum.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalaryBankACC.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptLoan.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalaryCadre.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalaryCadreBand.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptAllowDeno.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptGrade.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalaryAddition.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalaryLoan.rdlc" />
+    <None Include="Payroll\Reports\rptTransportSum.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptTransport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySubCont.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptCashSheet.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptAdvLoanStatement.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSuspenseSheet.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptTaxSheet.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptMobileBill.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptBankSheet.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptMaxPresent.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptLateMonthly.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendSumDesig.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendLeave.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendOvertime.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendMonthly.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptDailyMovement.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptEmpListReleased.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptJobCardMonthly.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptLateSum.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptLeaveForm.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptOvertimeHighest.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptOvertimeSum.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendAbsent.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendLate.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendMissing.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendInOut.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptIncrList2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptAttendFixed.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptEmpList.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptIncrInd.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptLeaveDetails.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptLeaveList.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Attendence\Reports\rptLeaveSum.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Common\FormEntry\frmMaster.resx">
+      <DependentUpon>frmMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmBloodGroup.resx">
+      <DependentUpon>frmBloodGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmBusStop.resx">
+      <DependentUpon>frmBusStop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmDistrict.resx">
+      <DependentUpon>frmDistrict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmExchangeRate.resx">
+      <DependentUpon>frmExchangeRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmFloor.resx">
+      <DependentUpon>frmFloor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmGrade.resx">
+      <DependentUpon>frmGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmDepartmentt.resx">
+      <DependentUpon>frmDepartmentt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmLine.resx">
+      <DependentUpon>frmLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmMonth.resx">
+      <DependentUpon>frmMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmMyInfo.resx">
+      <DependentUpon>frmMyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HK\FormEntry\frmReligion.resx">
+      <DependentUpon>frmReligion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmCreateUser.resx">
+      <DependentUpon>frmCreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmCreateUserGroup.resx">
+      <DependentUpon>frmCreateUserGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmDBBk.resx">
+      <DependentUpon>frmDBBk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmModule.resx">
+      <DependentUpon>frmModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmModuleGroup.resx">
+      <DependentUpon>frmModuleGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmModuleMenu.resx">
+      <DependentUpon>frmModuleMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmPassChange.resx">
+      <DependentUpon>frmPassChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmUserCompany.resx">
+      <DependentUpon>frmUserCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmUserMenu.resx">
+      <DependentUpon>frmUserMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmUserModule.resx">
+      <DependentUpon>frmUserModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll\FormEntry\frmLoan.resx">
+      <DependentUpon>frmLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Payroll\Reports\rptBonusSumDenomination.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalaryBank.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySumDenomination.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalaryHolidayBill.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPaySlipB.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptPaySlipB2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySheetB.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySheetB2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySheetB3.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySumB.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySumB2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Payroll\Reports\rptSalarySumB3.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="PF\Reports\rptPFList.rdlc" />
+    <EmbeddedResource Include="PF\Reports\rptPFSheet.rdlc" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="dsAdmResultSheet.xsc">
+      <DependentUpon>dsAdmResultSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsAdmResultSheet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAdmResultSheet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAdmResultSheet.xss">
+      <DependentUpon>dsAdmResultSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsAllowance.xsc">
+      <DependentUpon>dsAllowance.xsd</DependentUpon>
+    </None>
+    <None Include="dsAllowance.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAllowance.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAllowance.xss">
+      <DependentUpon>dsAllowance.xsd</DependentUpon>
+    </None>
+    <None Include="dsAllowanceSum.xsc">
+      <DependentUpon>dsAllowanceSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsAllowanceSum.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAllowanceSum.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAllowanceSum.xss">
+      <DependentUpon>dsAllowanceSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsAllowDeno.xsc">
+      <DependentUpon>dsAllowDeno.xsd</DependentUpon>
+    </None>
+    <None Include="dsAllowDeno.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAllowDeno.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAllowDeno.xss">
+      <DependentUpon>dsAllowDeno.xsd</DependentUpon>
+    </None>
+    <None Include="dsAttendFixed.xsc">
+      <DependentUpon>dsAttendFixed.xsd</DependentUpon>
+    </None>
+    <None Include="dsAttendFixed.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAttendFixed.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAttendFixed.xss">
+      <DependentUpon>dsAttendFixed.xsd</DependentUpon>
+    </None>
+    <None Include="dsAttendFixedF.xsc">
+      <DependentUpon>dsAttendFixedF.xsd</DependentUpon>
+    </None>
+    <None Include="dsAttendFixedF.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAttendFixedF.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAttendFixedF.xss">
+      <DependentUpon>dsAttendFixedF.xsd</DependentUpon>
+    </None>
+    <None Include="dsAttendMonthly.xsc">
+      <DependentUpon>dsAttendMonthly.xsd</DependentUpon>
+    </None>
+    <None Include="dsAttendMonthly.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAttendMonthly.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAttendMonthly.xss">
+      <DependentUpon>dsAttendMonthly.xsd</DependentUpon>
+    </None>
+    <None Include="dsAttendSum.xsc">
+      <DependentUpon>dsAttendSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsAttendSum.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAttendSum.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAttendSum.xss">
+      <DependentUpon>dsAttendSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsAttendSumSec.xsc">
+      <DependentUpon>dsAttendSumSec.xsd</DependentUpon>
+    </None>
+    <None Include="dsAttendSumSec.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAttendSumSec.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAttendSumSec.xss">
+      <DependentUpon>dsAttendSumSec.xsd</DependentUpon>
+    </None>
+    <None Include="dsBank.xsc">
+      <DependentUpon>dsBank.xsd</DependentUpon>
+    </None>
+    <None Include="dsBank.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBank.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBank.xss">
+      <DependentUpon>dsBank.xsd</DependentUpon>
+    </None>
+    <None Include="dsBonusSheet.xsc">
+      <DependentUpon>dsBonusSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsBonusSheet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBonusSheet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBonusSheet.xss">
+      <DependentUpon>dsBonusSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsBonusSum.xsc">
+      <DependentUpon>dsBonusSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsBonusSum.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBonusSum.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBonusSum.xss">
+      <DependentUpon>dsBonusSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsBonusSumDenomination.xsc">
+      <DependentUpon>dsBonusSumDenomination.xsd</DependentUpon>
+    </None>
+    <None Include="dsBonusSumDenomination.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBonusSumDenomination.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBonusSumDenomination.xss">
+      <DependentUpon>dsBonusSumDenomination.xsd</DependentUpon>
+    </None>
+    <None Include="dsDailyMovement.xsc">
+      <DependentUpon>dsDailyMovement.xsd</DependentUpon>
+    </None>
+    <None Include="dsDailyMovement.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDailyMovement.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsDailyMovement.xss">
+      <DependentUpon>dsDailyMovement.xsd</DependentUpon>
+    </None>
+    <None Include="dsDeductListMng.xsc">
+      <DependentUpon>dsDeductListMng.xsd</DependentUpon>
+    </None>
+    <None Include="dsDeductListMng.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDeductListMng.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsDeductListMng.xss">
+      <DependentUpon>dsDeductListMng.xsd</DependentUpon>
+    </None>
+    <None Include="dsEarnLeave.xsc">
+      <DependentUpon>dsEarnLeave.xsd</DependentUpon>
+    </None>
+    <None Include="dsEarnLeave.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEarnLeave.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEarnLeave.xss">
+      <DependentUpon>dsEarnLeave.xsd</DependentUpon>
+    </None>
+    <None Include="dsEmpDetails.xsc">
+      <DependentUpon>dsEmpDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsEmpDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmpDetails.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEmpDetails.xss">
+      <DependentUpon>dsEmpDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsEmpLetter.xsc">
+      <DependentUpon>dsEmpLetter.xsd</DependentUpon>
+    </None>
+    <None Include="dsEmpLetter.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmpLetter.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEmpLetter.xss">
+      <DependentUpon>dsEmpLetter.xsd</DependentUpon>
+    </None>
+    <None Include="dsEmployeeJoin.xsc">
+      <DependentUpon>dsEmployeeJoin.xsd</DependentUpon>
+    </None>
+    <None Include="dsEmployeeJoin.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeeJoin.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEmployeeJoin.xss">
+      <DependentUpon>dsEmployeeJoin.xsd</DependentUpon>
+    </None>
+    <None Include="dsEmployeeList.xsc">
+      <DependentUpon>dsEmployeeList.xsd</DependentUpon>
+    </None>
+    <None Include="dsEmployeeList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeeList.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEmployeeList.xss">
+      <DependentUpon>dsEmployeeList.xsd</DependentUpon>
+    </None>
+    <None Include="dsEmployeeReleased.xsc">
+      <DependentUpon>dsEmployeeReleased.xsd</DependentUpon>
+    </None>
+    <None Include="dsEmployeeReleased.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeeReleased.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEmployeeReleased.xss">
+      <DependentUpon>dsEmployeeReleased.xsd</DependentUpon>
+    </None>
+    <None Include="dsFestSum.xsc">
+      <DependentUpon>dsFestSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsFestSum.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFestSum.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsFestSum.xss">
+      <DependentUpon>dsFestSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsFormSales.xsc">
+      <DependentUpon>dsFormSales.xsd</DependentUpon>
+    </None>
+    <None Include="dsFormSales.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFormSales.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsFormSales.xss">
+      <DependentUpon>dsFormSales.xsd</DependentUpon>
+    </None>
+    <None Include="dsGrade.xsc">
+      <DependentUpon>dsGrade.xsd</DependentUpon>
+    </None>
+    <None Include="dsGrade.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGrade.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsGrade.xss">
+      <DependentUpon>dsGrade.xsd</DependentUpon>
+    </None>
+    <None Include="dsIncenPayment.xsc">
+      <DependentUpon>dsIncenPayment.xsd</DependentUpon>
+    </None>
+    <None Include="dsIncenPayment.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsIncenPayment.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsIncenPayment.xss">
+      <DependentUpon>dsIncenPayment.xsd</DependentUpon>
+    </None>
+    <None Include="dsIncentive.xsc">
+      <DependentUpon>dsIncentive.xsd</DependentUpon>
+    </None>
+    <None Include="dsIncentive.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsIncentive.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsIncentive.xss">
+      <DependentUpon>dsIncentive.xsd</DependentUpon>
+    </None>
+    <None Include="dsIncrement.xsc">
+      <DependentUpon>dsIncrement.xsd</DependentUpon>
+    </None>
+    <None Include="dsIncrement.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsIncrement.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsIncrement.xss">
+      <DependentUpon>dsIncrement.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="dsIncrTemp.xsc">
+      <DependentUpon>dsIncrTemp.xsd</DependentUpon>
+    </None>
+    <None Include="dsIncrTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsIncrTemp.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsIncrTemp.xss">
+      <DependentUpon>dsIncrTemp.xsd</DependentUpon>
+    </None>
+    <None Include="dsInsurance.xsc">
+      <DependentUpon>dsInsurance.xsd</DependentUpon>
+    </None>
+    <None Include="dsInsurance.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInsurance.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsInsurance.xss">
+      <DependentUpon>dsInsurance.xsd</DependentUpon>
+    </None>
+    <None Include="dsJobCard.xsc">
+      <DependentUpon>dsJobCard.xsd</DependentUpon>
+    </None>
+    <None Include="dsJobCard.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsJobCard.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsJobCard.xss">
+      <DependentUpon>dsJobCard.xsd</DependentUpon>
+    </None>
+    <None Include="dsJobCardDetails.xsc">
+      <DependentUpon>dsJobCardDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsJobCardDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsJobCardDetails.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsJobCardDetails.xss">
+      <DependentUpon>dsJobCardDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsJobCardMonthly.xsc">
+      <DependentUpon>dsJobCardMonthly.xsd</DependentUpon>
+    </None>
+    <None Include="dsJobCardMonthly.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsJobCardMonthly.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsJobCardMonthly.xss">
+      <DependentUpon>dsJobCardMonthly.xsd</DependentUpon>
+    </None>
+    <None Include="dsLateMonthly.xsc">
+      <DependentUpon>dsLateMonthly.xsd</DependentUpon>
+    </None>
+    <None Include="dsLateMonthly.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLateMonthly.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsLateMonthly.xss">
+      <DependentUpon>dsLateMonthly.xsd</DependentUpon>
+    </None>
+    <None Include="dsLeaveAbsent.xsc">
+      <DependentUpon>dsLeaveAbsent.xsd</DependentUpon>
+    </None>
+    <None Include="dsLeaveAbsent.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLeaveAbsent.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsLeaveAbsent.xss">
+      <DependentUpon>dsLeaveAbsent.xsd</DependentUpon>
+    </None>
+    <None Include="dsLeaveBalance.xsc">
+      <DependentUpon>dsLeaveBalance.xsd</DependentUpon>
+    </None>
+    <None Include="dsLeaveBalance.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLeaveBalance.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsLeaveBalance.xss">
+      <DependentUpon>dsLeaveBalance.xsd</DependentUpon>
+    </None>
+    <None Include="dsLeaveBalanceDetails.xsc">
+      <DependentUpon>dsLeaveBalanceDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsLeaveBalanceDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLeaveBalanceDetails.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsLeaveBalanceDetails.xss">
+      <DependentUpon>dsLeaveBalanceDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsLeaveList.xsc">
+      <DependentUpon>dsLeaveList.xsd</DependentUpon>
+    </None>
+    <None Include="dsLeaveList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLeaveList.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsLeaveList.xss">
+      <DependentUpon>dsLeaveList.xsd</DependentUpon>
+    </None>
+    <None Include="dsLoanDetails.xsc">
+      <DependentUpon>dsLoanDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsLoanDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLoanDetails.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsLoanDetails.xss">
+      <DependentUpon>dsLoanDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsLoanSheet.xsc">
+      <DependentUpon>dsLoanSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsLoanSheet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLoanSheet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsLoanSheet.xss">
+      <DependentUpon>dsLoanSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsLoanTemp.xsc">
+      <DependentUpon>dsLoanTemp.xsd</DependentUpon>
+    </None>
+    <None Include="dsLoanTemp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLoanTemp.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsLoanTemp.xss">
+      <DependentUpon>dsLoanTemp.xsd</DependentUpon>
+    </None>
+    <None Include="dsMaxStatus.xsc">
+      <DependentUpon>dsMaxStatus.xsd</DependentUpon>
+    </None>
+    <None Include="dsMaxStatus.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMaxStatus.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsMaxStatus.xss">
+      <DependentUpon>dsMaxStatus.xsd</DependentUpon>
+    </None>
+    <None Include="dsML.xsc">
+      <DependentUpon>dsML.xsd</DependentUpon>
+    </None>
+    <None Include="dsML.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsML.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsML.xss">
+      <DependentUpon>dsML.xsd</DependentUpon>
+    </None>
+    <None Include="dsNightAllow.xsc">
+      <DependentUpon>dsNightAllow.xsd</DependentUpon>
+    </None>
+    <None Include="dsNightAllow.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsNightAllow.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsNightAllow.xss">
+      <DependentUpon>dsNightAllow.xsd</DependentUpon>
+    </None>
+    <None Include="dsOTApproval.xsc">
+      <DependentUpon>dsOTApproval.xsd</DependentUpon>
+    </None>
+    <None Include="dsOTApproval.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOTApproval.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsOTApproval.xss">
+      <DependentUpon>dsOTApproval.xsd</DependentUpon>
+    </None>
+    <None Include="dsOTOfficer.xsc">
+      <DependentUpon>dsOTOfficer.xsd</DependentUpon>
+    </None>
+    <None Include="dsOTOfficer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOTOfficer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsOTOfficer.xss">
+      <DependentUpon>dsOTOfficer.xsd</DependentUpon>
+    </None>
+    <None Include="dsOTPermission.xsc">
+      <DependentUpon>dsOTPermission.xsd</DependentUpon>
+    </None>
+    <None Include="dsOTPermission.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOTPermission.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsOTPermission.xss">
+      <DependentUpon>dsOTPermission.xsd</DependentUpon>
+    </None>
+    <None Include="dsOTRange.xsc">
+      <DependentUpon>dsOTRange.xsd</DependentUpon>
+    </None>
+    <None Include="dsOTRange.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOTRange.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsOTRange.xss">
+      <DependentUpon>dsOTRange.xsd</DependentUpon>
+    </None>
+    <None Include="dsOvertimeHighest.xsc">
+      <DependentUpon>dsOvertimeHighest.xsd</DependentUpon>
+    </None>
+    <None Include="dsOvertimeHighest.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOvertimeHighest.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsOvertimeHighest.xss">
+      <DependentUpon>dsOvertimeHighest.xsd</DependentUpon>
+    </None>
+    <None Include="dsOvertimeSum.xsc">
+      <DependentUpon>dsOvertimeSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsOvertimeSum.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOvertimeSum.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsOvertimeSum.xss">
+      <DependentUpon>dsOvertimeSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsPaySlip.xsc">
+      <DependentUpon>dsPaySlip.xsd</DependentUpon>
+    </None>
+    <None Include="dsPaySlip.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPaySlip.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsPaySlip.xss">
+      <DependentUpon>dsPaySlip.xsd</DependentUpon>
+    </None>
+    <None Include="dsPFSheet.xsc">
+      <DependentUpon>dsPFSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsPFSheet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPFSheet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsPFSheet.xss">
+      <DependentUpon>dsPFSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsPFSum.xsc">
+      <DependentUpon>dsPFSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsPFSum.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPFSum.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsPFSum.xss">
+      <DependentUpon>dsPFSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptAdvanceSheet.xsc">
+      <DependentUpon>dsRptAdvanceSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptAdvanceSheet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptAdvanceSheet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsRptAdvanceSheet.xss">
+      <DependentUpon>dsRptAdvanceSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsrptAttend.xsc">
+      <DependentUpon>dsrptAttend.xsd</DependentUpon>
+    </None>
+    <None Include="dsrptAttend.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsrptAttend.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsrptAttend.xss">
+      <DependentUpon>dsrptAttend.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptBankSheet2.xsc">
+      <DependentUpon>dsRptBankSheet2.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptBankSheet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptBankSheet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsRptBankSheet2.xss">
+      <DependentUpon>dsRptBankSheet2.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptCashSheet.xsc">
+      <DependentUpon>dsRptCashSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptCashSheet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptCashSheet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsRptCashSheet.xss">
+      <DependentUpon>dsRptCashSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsrptFestivalSheet.xsc">
+      <DependentUpon>dsrptFestivalSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsrptFestivalSheet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsrptFestivalSheet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsrptFestivalSheet.xss">
+      <DependentUpon>dsrptFestivalSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptMobileBill.xsc">
+      <DependentUpon>dsRptMobileBill.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptMobileBill.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptMobileBill.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsRptMobileBill.xss">
+      <DependentUpon>dsRptMobileBill.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptSuspenseSheet.xsc">
+      <DependentUpon>dsRptSuspenseSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptSuspenseSheet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptSuspenseSheet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsRptSuspenseSheet.xss">
+      <DependentUpon>dsRptSuspenseSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptTaxSheet.xsc">
+      <DependentUpon>dsRptTaxSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsRptTaxSheet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptTaxSheet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsRptTaxSheet.xss">
+      <DependentUpon>dsRptTaxSheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryAddDed.xsc">
+      <DependentUpon>dsSalaryAddDed.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryAddDed.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalaryAddDed.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSalaryAddDed.xss">
+      <DependentUpon>dsSalaryAddDed.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryAll.xsc">
+      <DependentUpon>dsSalaryAll.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryAll.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalaryAll.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSalaryAll.xss">
+      <DependentUpon>dsSalaryAll.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryBank.xsc">
+      <DependentUpon>dsSalaryBank.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryBank.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalaryBank.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSalaryBank.xss">
+      <DependentUpon>dsSalaryBank.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryCasual.xsc">
+      <DependentUpon>dsSalaryCasual.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryCasual.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalaryCasual.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSalaryCasual.xss">
+      <DependentUpon>dsSalaryCasual.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryCasualSum.xsc">
+      <DependentUpon>dsSalaryCasualSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryCasualSum.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalaryCasualSum.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSalaryCasualSum.xss">
+      <DependentUpon>dsSalaryCasualSum.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryDeno.xsc">
+      <DependentUpon>dsSalaryDeno.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryDeno.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalaryDeno.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSalaryDeno.xss">
+      <DependentUpon>dsSalaryDeno.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryDriver.xsc">
+      <DependentUpon>dsSalaryDriver.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryDriver.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalaryDriver.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSalaryDriver.xss">
+      <DependentUpon>dsSalaryDriver.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryMng.xsc">
+      <DependentUpon>dsSalaryMng.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalaryMng.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalaryMng.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSalaryMng.xss">
+      <DependentUpon>dsSalaryMng.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalarySheet.xsc">
+      <DependentUpon>dsSalarySheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalarySheet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalarySheet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSalarySheet.xss">
+      <DependentUpon>dsSalarySheet.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalarySum.xsc">
+      <DependentUpon>dsSalarySum.xsd</DependentUpon>
+    </None>
+    <None Include="dsSalarySum.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalarySum.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSalarySum.xss">
+      <DependentUpon>dsSalarySum.xsd</DependentUpon>
+    </None>
+    <None Include="dsSumTest.xsc">
+      <DependentUpon>dsSumTest.xsd</DependentUpon>
+    </None>
+    <None Include="dsSumTest.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSumTest.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsSumTest.xss">
+      <DependentUpon>dsSumTest.xsd</DependentUpon>
+    </None>
+    <None Include="dsTiffin.xsc">
+      <DependentUpon>dsTiffin.xsd</DependentUpon>
+    </None>
+    <None Include="dsTiffin.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTiffin.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsTiffin.xss">
+      <DependentUpon>dsTiffin.xsd</DependentUpon>
+    </None>
+    <None Include="dsTraining.xsc">
+      <DependentUpon>dsTraining.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="dsTraining.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTraining.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="dsTraining.xss">
+      <DependentUpon>dsTraining.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="dsTranLog.xsc">
+      <DependentUpon>dsTranLog.xsd</DependentUpon>
+    </None>
+    <None Include="dsTranLog.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTranLog.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsTranLog.xss">
+      <DependentUpon>dsTranLog.xsd</DependentUpon>
+    </None>
+    <None Include="dsTransfer.xsc">
+      <DependentUpon>dsTransfer.xsd</DependentUpon>
+    </None>
+    <None Include="dsTransfer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTransfer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsTransfer.xss">
+      <DependentUpon>dsTransfer.xsd</DependentUpon>
+    </None>
+    <None Include="dsUnclaimed.xsc">
+      <DependentUpon>dsUnclaimed.xsd</DependentUpon>
+    </None>
+    <None Include="dsUnclaimed.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUnclaimed.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsUnclaimed.xss">
+      <DependentUpon>dsUnclaimed.xsd</DependentUpon>
+    </None>
+    <None Include="dtAttendSumTiffin.xsc">
+      <DependentUpon>dtAttendSumTiffin.xsd</DependentUpon>
+    </None>
+    <None Include="dtAttendSumTiffin.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtAttendSumTiffin.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dtAttendSumTiffin.xss">
+      <DependentUpon>dtAttendSumTiffin.xsd</DependentUpon>
+    </None>
+    <None Include="dtIncrEntitle.xsc">
+      <DependentUpon>dtIncrEntitle.xsd</DependentUpon>
+    </None>
+    <None Include="dtIncrEntitle.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtIncrEntitle.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dtIncrEntitle.xss">
+      <DependentUpon>dtIncrEntitle.xsd</DependentUpon>
+    </None>
+    <None Include="GTRHRISDataSet.xsc">
+      <DependentUpon>GTRHRISDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GTRHRISDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GTRHRISDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GTRHRISDataSet.xss">
+      <DependentUpon>GTRHRISDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="rptidcard.xsc">
+      <DependentUpon>rptidcard.xsd</DependentUpon>
+    </None>
+    <None Include="rptidcard.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rptidcard.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rptidcard.xss">
+      <DependentUpon>rptidcard.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HK\FormReport\" />
+    <Folder Include="HK\Reports\" />
+    <Folder Include="HR\FormReport\" />
+    <Folder Include="HR\Reports\" />
+    <Folder Include="Letter\FormEntry\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
